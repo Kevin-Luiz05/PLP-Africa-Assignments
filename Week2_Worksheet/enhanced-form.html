@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    form input, form select, form textarea {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 8px;
+    }
+    video, audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HTML5 Enhanced Content Page</h1>
+  <p>This web page demonstrates advanced HTML5 content with media, tables, lists, and validated forms.</p>
+</header>
+
+<section>
+  <h2>Media Showcase</h2>
+  
+  <!-- Video Section -->
+  <h3>Sample Video</h3>
+  <video controls>
+    <source src="media/sample.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Audio Section -->
+  <h3>Sample Audio</h3>
+  <audio controls>
+    <source src="media/sample.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<section>
+  <h2>Useful Resources List</h2>
+  <ul>
+    <li>HTML5 Documentation</li>
+    <li>MDN Web Docs</li>
+    <li>W3Schools</li>
+    <li>FreeCodeCamp</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Course Schedule Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Activity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>HTML5 Basics</td>
+        <td>Code Lab</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Forms & Tables</td>
+        <td>Practical</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Media & Embeds</td>
+        <td>Project Work</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>User Feedback Form</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="your@email.com" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit phone number" />
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="ke">Kenya</option>
+        <option value="ng">Nigeria</option>
+        <option value="za">South Africa</option>
+        <option value="gh">Ghana</option>
+      </select>
+
+      <label for="comment">Comments:</label>
+      <textarea id="comment" name="comment" rows="5" placeholder="Write your feedback here..."></textarea>
+
+      <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        Subscribe to newsletter
+      </label>
+    </fieldset>
+
+    <input type="submit" value="Submit Feedback" />
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Power Learn Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
