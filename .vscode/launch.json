@@ -4,11 +4,12 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open enhanced-form.html",
-            "file": "c:\\Users\\princ\\Power Learn Project PLP Africa\\Week2_Worksheet\\enhanced-form.html"
-        }
-    ]
+    {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${Week3_Worksheet}/index.html"
+    }
+]    
 }
