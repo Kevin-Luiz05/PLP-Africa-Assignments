@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: #4cafef;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Navigation */
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #333;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav a:hover {
+  background: #4cafef;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Model Example */
+.box {
+  background: #f9c74f;
+  padding: 30px;
+  border: 5px solid #333;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
