@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PLP Week 6 — JS Events & Interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>PLP Week 6 — JavaScript Events & Interactivity</h1>
+    <p class="lead">Dark mode • Counter game • Collapsible FAQ • Custom form validation</p>
+  </header>
+
+  <main class="layout">
+
+    <!-- Interactive controls -->
+    <section class="card" id="controls">
+      <h2>Interactive Controls (Events)</h2>
+      <div class="row">
+        <button id="toggleThemeBtn" class="btn">Toggle Dark Mode</button>
+        <button id="generateAlertBtn" class="btn secondary">Demo Alert (click)</button>
+      </div>
+      <div id="controlsResult" class="result" aria-live="polite"></div>
+    </section>
+
+    <!-- Counter game -->
+    <section class="card" id="counter">
+      <h2>Counter Game</h2>
+      <p>Click <strong>Fast</strong> for 5 seconds and score as many points as possible.</p>
+      <div class="game-row">
+        <button id="clickBtn" class="btn big">Click me!</button>
+        <div class="score-board">
+          <div>Time: <span id="timeLeft">0</span>s</div>
+          <div>Score: <span id="score">0</span></div>
+          <div><button id="startGameBtn" class="btn">Start 5s Game</button></div>
+        </div>
+      </div>
+      <div id="gameResult" class="result" aria-live="polite"></div>
+    </section>
+
+    <!-- Collapsible FAQ -->
+    <section class="card" id="faq">
+      <h2>Collapsible FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this demo?</button>
+        <div class="faq-answer">A demo of JavaScript event handling and DOM manipulation for PLP.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does the counter game work?</button>
+        <div class="faq-answer">Start the game then click the big button as fast as you can in 5 seconds.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is form data saved?</button>
+        <div class="faq-answer">No. This demo validates client-side and shows a success message only.</div>
+      </div>
+    </section>
+
+    <!-- Form validation -->
+    <section class="card" id="form-section">
+      <h2>Form Validation (Custom JS)</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Full name
+          <input id="fullName" name="fullName" type="text" placeholder="Jane Doe" />
+          <small class="hint">Letters and spaces only</small>
+          <div class="error" id="errName" aria-live="polite"></div>
+        </label>
+
+        <label>
+          Email
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+          <small class="hint">We'll validate format via JS</small>
+          <div class="error" id="errEmail" aria-live="polite"></div>
+        </label>
+
+        <label>
+          Password
+          <input id="password" name="password" type="password" placeholder="Min 8 chars, 1 uppercase, 1 number, 1 special" />
+          <div class="error" id="errPassword" aria-live="polite"></div>
+        </label>
+
+        <label>
+          Confirm Password
+          <input id="confirmPassword" name="confirmPassword" type="password" />
+          <div class="error" id="errConfirm" aria-live="polite"></div>
+        </label>
+
+        <label>
+          Age
+          <input id="age" name="age" type="number" min="0" placeholder="e.g., 18" />
+          <div class="error" id="errAge" aria-live="polite"></div>
+        </label>
+
+        <label class="checkbox">
+          <input id="terms" type="checkbox" />
+          <span>I agree to the demo terms</span>
+          <div class="error" id="errTerms" aria-live="polite"></div>
+        </label>
+
+        <div class="form-actions">
+          <button id="submitBtn" class="btn">Submit</button>
+          <button id="resetBtn" type="button" class="btn secondary">Reset</button>
+        </div>
+
+        <div id="formResult" class="result" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>PLP Africa • JS Events & Interactivity — built by Kevin Kamau.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
