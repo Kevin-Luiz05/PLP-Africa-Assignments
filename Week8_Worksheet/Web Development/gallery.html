@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — YourSite</title>
+  <meta name="description" content="Project screenshots and gallery." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">YourSite</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+      <nav id="primaryNav" class="nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Gallery</h1>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Example items: replace images with your own -->
+      <figure class="thumb"><img src="images/project1.jpg" alt="Project 1 screenshot"><figcaption>Project 1</figcaption></figure>
+      <figure class="thumb"><img src="images/project2.jpg" alt="Project 2 screenshot"><figcaption>Project 2</figcaption></figure>
+      <figure class="thumb"><img src="images/project3.jpg" alt="Project 3 screenshot"><figcaption>Project 3</figcaption></figure>
+      <figure class="thumb"><img src="images/project4.jpg" alt="Project 4 screenshot"><figcaption>Project 4</figcaption></figure>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
