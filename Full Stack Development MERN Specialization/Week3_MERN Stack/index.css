@@ -1,0 +1,20 @@
+base
+components 
+utilities 
+
+/* custom */
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --txt: #0f172a;
+}
+.dark {
+  --bg: #0b1220;
+  --card: #071029;
+  --txt: #e6eef8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--txt);
+}
